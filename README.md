@@ -1,16 +1,8 @@
 # AWSのMLサービスを使ってみよう
 
-## 目次
-
-- [Amazon Comprehend](p01_comprehend/README.md)
-- [Amazon Rekognition](p02_rekognition/README.md)
-- [Amazon Transcribe](p03_transcribe/README.md)
-
 ## Cloud9でSDKを実行するための準備
 ### 1. IAMユーザーの作成
-
-- ルートユーザーは極力使わないこと！
-  - 
+- **ルートユーザーは極力使わないこと！**
 - 利用するポリシー
     - `AWSCloud9Administrator`
     - `ComprehendFullAccess`
@@ -19,12 +11,19 @@
     - `AmazonS3FullAccess` (Transcribeを利用する場合)
 
 ### 2. Cloud9環境の作成
-
 - スペックはデフォルトでOK
 
-### 3. 必要なモジュールのインストール
-
+### 3. リポジトリのClone
 ```
-$ sudo pip install boto3 requests
+$ git clone https://github.com/mohira-books/aws-ml-services-handson.git
 ```
 
+### 4. 必要なモジュールのインストール
+```
+$ sudo pip3 install boto3 requests
+```
+
+### 5. 好きな演習を進める
+- [演習: Amazon Comprehend](p01_comprehend/README.md)
+- [演習: Amazon Rekognition](p02_rekognition/README.md)
+- [演習: Amazon Transcribe](p03_transcribe/README.md)
